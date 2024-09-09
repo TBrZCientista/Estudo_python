@@ -22,7 +22,7 @@ while True:
 
     opção = input(menu)
 
-    if opção == "1":
+    if opção == "1": #opção de depósito
         
         valor = float(input("Informe o valor à depositar por favor: "))
 
@@ -33,7 +33,7 @@ while True:
         else:
             print("Erro na operação. Valor informado é inválido")
     
-    elif opção == "2":
+    elif opção == "2": #opção de saque
         
         valor = float(input("Informe o valor à sacar por favor: "))
 
@@ -60,14 +60,14 @@ while True:
         else:
             print("Falha na operação. O valor informado é inválido.")
 
-    elif opção == "3":
+    elif opção == "3": #opção de extrato
         print("\n########## Extrato ##########")
         print("Não foram realizadas movimentações" if not extrato else extrato)
         print(f"\nSaldo: R$ {saldo:.2f}")
         print("#############################")
 
-    elif opção == "0":
+    elif opção == "0": #opção de saída do sistema
         break
 
-    else:
+    else: #caso selecione algo diferente da opção, a mensagem abaixo aparece
         print("Opção inválida. Por favor, selecione uma das operações do Menu.")
