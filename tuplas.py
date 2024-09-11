@@ -73,3 +73,6 @@ linguages = ("Phyton", "C+", "Java", "HTML")
 
 print(len(linguages))
 
+carros_3 = ("gol")
+
+print(isinstance(carros,tuple))
